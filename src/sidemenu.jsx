@@ -1,10 +1,10 @@
 import React from 'react'
 import Usermanagement from './Usermanagement.jsx';
 import Dashboard from './dashboard.jsx';
-import Permissions from './permissions.jsx';
+import Permissions from './Permissions.jsx';
 import Actions from './Actions.jsx';
 import Notifications from './Notifications.jsx';
-import Portfolio from './portfolio.jsx';
+import Portfolio from './Portfolio.jsx';
 const sidemenu = ({count}) => {
 let content;
 if( count==1)
