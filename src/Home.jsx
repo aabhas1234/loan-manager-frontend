@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='p-5 '>
         <div className='flex space-x-3 items-center justify-between bg-gray-200 p-2 rounded-md'>
-            <img src='../public/logo.jpg '   className='w-[5rem] h-[3rem] rounded-md'></img>
+            <img src='./logo.jpg '   className='w-[5rem] h-[3rem] rounded-md'></img>
             <div className='font-bold font-serif text-[0.7rem] '>
                 <div className='border-2 border-black mb-0.5 p-1 rounded-md text-centerc'>Hello {localStorage.getItem("name")}</div>
                 <div className='border-2 border-black p-1 rounded-md'>{localStorage.getItem("email")}</div>
