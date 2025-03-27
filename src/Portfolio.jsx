@@ -112,6 +112,8 @@ const portfolio = () => {
         setfinal1([]);
         setisregion(false);
         setisname(false);
+        setregion('');
+        setname('');
     }
     const handler7=(e)=>{
         setname(e.target.value);
