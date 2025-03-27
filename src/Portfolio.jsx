@@ -36,7 +36,9 @@ const portfolio = () => {
     }
     const sortify = () => {
         console.log("arr", arr);
-        let keys = Object.keys(arr[0]);
+        let keys=[];
+        if(arr.length>0)
+         keys = Object.keys(arr[0]);
         let newarray = [];
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < keys.length; j++) {
