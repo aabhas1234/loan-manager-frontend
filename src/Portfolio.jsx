@@ -92,9 +92,9 @@ const portfolio = () => {
         console.log(tar);
         let map = new Map();
         arr.forEach((ele) => {
-            let a = map.get(ele[tar]) || [];
+           let a = map.get(ele[tar].toLowerCase()) || [];
             a.push(...Object.values(ele));
-            map.set(ele[tar], a);
+            map.set(ele[tar].toLowerCase(), a);
         });
         let newarr = [];
         for (let value of map.values()) {
