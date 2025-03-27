@@ -45,7 +45,7 @@ const Addnewloanentry =() => {
         <div className='p-5 text-center'>
 
             <div className='flex space-x-3 items-center justify-between bg-gray-200 p-3 rounded-md'>
-                <img src='../public/logo.jpg ' className='w-[5rem] h-[3rem] rounded-md'></img>
+                <img src='./logo.jpg ' className='w-[5rem] h-[3rem] rounded-md'></img>
                 <div className='font-bold font-serif text-[0.7rem] '>
                     <div className='border-2 border-black mb-0.5 p-1 rounded-md'>Hello admin_name</div>
                     <div className='border-2 border-black p-1 rounded-md'>Email of admin</div>
