@@ -38,7 +38,7 @@ const portfolio = () => {
         console.log("arr", arr);
         let keys=[];
         if(arr.length>0)
-         keys = Object.keys(arr[0]);
+        {  keys=Object.keys(arr[0]);}
         let newarray = [];
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < keys.length; j++) {
@@ -125,7 +125,7 @@ const portfolio = () => {
         fetchloanentries();
     }, [loantype,region,name])
     useEffect(() => {
-        if (arr.length > 0)
+        if (arr.length > 0 || flag)
             setfinal(sortify());
         if(flag1)
             handler2(bucket);
