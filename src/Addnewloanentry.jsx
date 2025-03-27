@@ -44,14 +44,14 @@ const Addnewloanentry =() => {
     return (
         <div className='p-5 text-center'>
 
-            <div className='flex space-x-3 items-center justify-between bg-gray-200 p-3 rounded-md'>
-                <img src='./logo.jpg ' className='w-[5rem] h-[3rem] rounded-md'></img>
-                <div className='font-bold font-serif text-[0.7rem] '>
-                    <div className='border-2 border-black mb-0.5 p-1 rounded-md'>Hello admin_name</div>
-                    <div className='border-2 border-black p-1 rounded-md'>Email of admin</div>
-                </div>
-
+           <div className='flex space-x-3 items-center justify-between bg-gray-200 p-3 rounded-md'>
+            <img src='./logo.jpg '   className='w-[5rem] h-[3rem] rounded-md'></img>
+            <div className='font-bold font-serif text-[0.7rem] '>
+                <div className='border-2 border-black mb-0.5 p-1 rounded-md text-centerc'>Hello {localStorage.getItem("name")}</div>
+                <div className='border-2 border-black p-1 rounded-md'>{localStorage.getItem("email")}</div>
             </div>
+           
+        </div>
             <hr className="border-blue-950 text-white my-4" />
             <div className='font-bold text-[1.25rem] w-fit m-auto mb-3' >Enter your New Loan Entry here :</div>
             <div className='grid grid-cols-2 gap-3 w-fit m-auto '>
