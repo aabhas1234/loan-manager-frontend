@@ -20,7 +20,7 @@ const portfolio = () => {
     const root=import.meta.env.VITE_root_url;
     const fetchloanentries = async () => {
 
-        const result = await fetch(`${root}/api/getloanentries?loantype=${loantype}&region=${region}&name=${name}`, {
+        const result = await fetch(`${root}/api/getloanentriess?loantype=${loantype}&region=${region}&name=${name}`, {
             method: 'GET'
         })
         const res = await result.json();
